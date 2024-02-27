@@ -6,12 +6,10 @@ header {
     position: fixed;
 background-color: white;
 }
-container-01 {
-    display: grid;
-    grid-template-rows: auto auto 1fr auto; /* Define rows for header, menu, main, and footer */
-    grid-gap: 10px; /* Add spacing between elements */
-    justify-items: center;
-   
+.container-01 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .menu {
     display: flex;
@@ -42,6 +40,7 @@ hr {
     padding: 1px;
     font-size: larger;
     padding-left: 70px;
+    
 }
 
 .search.root {
