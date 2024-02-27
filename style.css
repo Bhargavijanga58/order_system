@@ -1,0 +1,167 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.container01 {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto; /* Define rows for header, menu, main, and footer */
+    grid-gap: 10px; /* Add spacing between elements */
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+hr {
+    width: 90%; /* Set the desired width here */
+  }
+
+.container02 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 90px;
+  }
+  .container img {
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+.root.search {
+    width: 630px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: #e1e9dc;
+    border: 0;
+    padding: 1px;
+    font-size: larger;
+    padding-left: 70px;
+}
+
+.search.root {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/></svg>');
+    background-repeat: no-repeat;
+    background-position: left 20px center;
+    padding-right: 10px; 
+    transition: background-image 0.1s ease-in-out; /* Add transition for smooth icon change */
+
+  }
+
+  .toggle-btn {
+    border: none;
+    width: 176px;
+    height: 40px;
+    border-radius: 100px;
+    cursor: pointer;
+    font-weight: bold; 
+    font-size: larger;
+
+  }
+  
+  .toggle-btn.active {
+    
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .circular-button {
+    border: 0 solid ; /* Set border width and color */
+    border-radius: 90px; /* Make the button circular */
+    width:50px;
+    background-color: #4CAF50; /* Set background color to transparent */
+     padding: 5px;
+    cursor: pointer; /* Set cursor to pointer for better user interaction */
+  }
+
+  /*side bar  */
+
+  .w3-sidebar {
+    position: fixed; 
+    top: 90px; 
+    bottom: 0; 
+    left: 70px; 
+    z-index: 3;
+    width: 300px;
+    font-weight: bold;
+    height: 75%; 
+    margin-left: 0; 
+  }
+  
+  .w3-sidebar a {
+    padding: 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #0e0f0e;
+    display: block;
+    border-radius: 10px;
+  }
+  /* CSS for SVG icon */
+  .icon {
+    margin-right: 10px; /* Add margin between icon and text */
+    transition: filter; /* Add transition for smooth effect */
+}
+
+/* Change color of SVG icon when parent anchor is hovered */
+.w3-sidebar a:hover .icon {
+    filter: brightness(0) invert(1); /* Change color of SVG to white when hovered */
+}
+  .w3-sidebar a:hover {
+    background-color:  #4CAF50;
+    color: black;
+  }
+  
+  .w3-sidebar .w3-bar-block a {
+    padding: 20px;
+    border : None;
+    border-radius: 10px;
+  }
+  
+  .w3-sidebar .w3-bar-block a:hover {
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+  }
+
+
+  /* Main section */
+  .card .img-fluid {
+    width: 95%;
+    height: 200px; /* Adjust this value as needed */
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .btn[data-slide="prev"],
+  .btn[data-slide="next"] {
+      border-radius: 100px;
+      justify-content: center; /* Align icon horizontally */
+      align-items: center; 
+      background-color: #e1e9dc;
+      border: none;
+  }
+
+
+
+  
+  
+  /* footer */
+
+  .container {
+    margin-left: 78px !important;
+     /* Adjust the margin value as needed */
+}
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-icons img {
+    width: 20px; /* Adjust icon size as needed */
+    height: 20px;
+  }
+  
