@@ -39,3 +39,8 @@ var togglerButton = document.querySelector('[data-bs-toggle="offcanvas"]');
 togglerButton.addEventListener('click', function () {
     offcanvas.toggle();
 });
+
+var carousel = new bootstrap.Carousel(document.querySelector('#carouselExampleIndicators2'), {
+  interval: 10000, // Set the interval for the carousel to change slides (in milliseconds)
+  wrap: true // Set to true if you want the carousel to loop back to the first slide after reaching the last slide
+});
