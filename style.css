@@ -209,4 +209,15 @@ hr {
 .container {
   padding-top: 200px!important;
 }
+
+/* Change color of text and icon when parent anchor is hovered */
+.w3-sidebar a:hover {
+  color: #4CAF50; /* Change text color to green */
+}
+
+.w3-sidebar a:hover .icon {
+  filter: invert(54%) sepia(73%) saturate(358%) hue-rotate(73deg) brightness(93%) contrast(92%);
+}
+
+
   }
