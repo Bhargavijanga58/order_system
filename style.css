@@ -77,15 +77,16 @@ hr {
   /* CSS for sidebar menu */
 .w3-sidebar {
   position: fixed; 
-  top: 25px; 
+  top: 90px; 
   bottom: 0; 
   left: 70px; 
   z-index: 3;
-  width: 300px;
   font-weight: bold;
   height: 75%; 
   margin-left: 0; 
-  overflow-y: auto;
+  overflow-y: auto; /* Enable vertical scrollbar */
+  width: auto; /* Set width to auto to fit content */
+  max-width: 300px;
 }
 
 .w3-sidebar a {
@@ -113,15 +114,8 @@ hr {
 }
 
 
-.w3-sidebar .w3-bar-block a {
-  padding: 20px;
-  border: none;
-  border-radius: 10px;
-}
-
 .w3-sidebar .w3-bar-block a:hover {
   background-color: transparent; /* Remove background color */
-  border-radius: 0; /* Remove border-radius */
   color: #4CAF50; /* Change text color to green */
 }
 
