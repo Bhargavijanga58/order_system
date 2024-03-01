@@ -19,16 +19,7 @@ document.querySelector('.search.root').addEventListener('input', function() {
   });
   
 
-// Script to open and close sidebar
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-  }
-   
-  function w3_close() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-  }
+
 
   // Initialize the offcanvas component
 var offcanvasElement = document.getElementById('offcanvas');
