@@ -179,6 +179,7 @@ hr {
       height: 75%;
       margin-left: 0;
      }
+     
   
 .container02 {
   display: inline-flex;
@@ -221,6 +222,14 @@ hr {
 .w3-sidebar a:hover .icon {
   filter: invert(54%) sepia(73%) saturate(358%) hue-rotate(73deg) brightness(93%) contrast(92%);
 }
-
+#offcanvas {
+  width: 35% !important;
+} 
 
   }
+
+  @media (max-width: 375px)
+  {
+#offcanvas {
+    width: 40% !important;
+}}
