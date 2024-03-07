@@ -1,3 +1,69 @@
+document.addEventListener('DOMContentLoaded', function() {
+  const searchInput = document.querySelector('.search');
+  const suggestionsContainer = document.getElementById('suggestions');
+  const suggestions = ['subway', 'McDonald`s', 'Pista house', 'Thai', 'Dunkin`', 'Chyu`s'];
+
+  searchInput.addEventListener('input', function() {
+      const searchValue = this.value.toLowerCase();
+      suggestionsContainer.innerHTML = '';
+      let hasMatch = false; // Flag to check if any suggestions match
+
+      if (searchValue.length > 0) {
+          suggestions.forEach(function(suggestion) {
+              if (suggestion.toLowerCase().includes(searchValue)) {
+                  const div = document.createElement('div');
+                  div.textContent = suggestion;
+                  div.addEventListener('click', function() {
+                    searchInput.value = this.textContent; // Set the search input value to the clicked suggestion
+                    window.location.href = 'order.html';
+                    suggestionsContainer.style.display = 'none'; // Hide the suggestions container
+                });
+                  suggestionsContainer.appendChild(div);
+                  hasMatch = true; // Set flag to true if a match is found
+              }
+            
+          });
+
+          // Show the suggestions container if there's at least one match
+          if (hasMatch) {
+              suggestionsContainer.style.display = 'block';
+          } else {
+              // Hide the suggestions container if no matches are found
+              suggestionsContainer.style.display = 'block';
+              suggestionsContainer.innerHTML = "Not yet updated"
+              suggestionsContainer.style.padding = "10px"
+              
+          }
+      }
+      else {
+        // Hide the suggestions container if no matches are found
+        suggestionsContainer.style.display = 'None';
+      }
+
+
+  });
+
+
+
+  // Close the suggestions list when clicking outside
+  document.addEventListener('click', function(event) {
+      if (!searchInput.contains(event.target)) {
+          suggestionsContainer.style.display = 'none';
+      }
+  });
+});
+function handleCardClick() {
+  window.location.href = "order.html";
+ }
+ 
+ const cardItems = document.querySelectorAll('.card');
+ if (cardItems) {
+  cardItems.forEach(function(cardItem) {
+     cardItem.addEventListener('click', handleCardClick);
+  });
+ }
+ 
+
 const toggleBtns = document.querySelectorAll('.toggle-btn');
 const deliveryBtn = document.getElementById('deliveryBtn');
 deliveryBtn.classList.add('active');
@@ -35,3 +101,4 @@ var carousel = new bootstrap.Carousel(document.querySelector('#carouselExampleIn
   interval: 10000, // Set the interval for the carousel to change slides (in milliseconds)
   wrap: true // Set to true if you want the carousel to loop back to the first slide after reaching the last slide
 });
+

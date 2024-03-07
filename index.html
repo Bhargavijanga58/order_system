@@ -32,6 +32,7 @@
         />
 
         <input class="search root" type="text" placeholder="Search..." />
+        <div class="suggestions" id="suggestions"></div>
         <button class="toggle-btn" id="deliveryBtn">Delivery</button>
         <button class="toggle-btn" id = "deliveryBtn" onclick="location.href='pickup.html'">
           Pickup
@@ -58,7 +59,7 @@
           </div>
         </div>
       </div>
-      <script src="script.js"></script>
+      
       <p></p>
       <p></p><hr />
     </header>
@@ -188,7 +189,7 @@
                          
                         />
                         <div class="card-body">
-                          <h4 class="card-title">Subway</h4>
+                          <h4 class="card-title" id = "Subway">Subway</h4>
                           <p class="card-text">
                             4.5 rating | 0.6 Mi | 15 mins
                           </p>
@@ -204,7 +205,7 @@
                           src="./images/biryani.jpg"
                         />
                         <div class="card-body">
-                          <h4 class="card-title">Pista House</h4>
+                          <h4 class="card-title" id = "Pista House">Pista House</h4>
                           <p class="card-text">
                             4.9 rating | 1.6 Mi | 55 mins
                           </p>
@@ -221,7 +222,7 @@
                           src="./images/mcd.jpg"
                         />
                         <div class="card-body">
-                          <h4 class="card-title">McDonald's</h4>
+                          <h4 class="card-title" id = 'McDonald`s'>McDonald's</h4>
                           <p class="card-text">
                             4.0 rating | 0.2 Mi | 10 mins
                           </p>
@@ -242,7 +243,7 @@
                           src="./images/thai.png"
                         />
                         <div class="card-body">
-                          <h4 class="card-title">Thai</h4>
+                          <h4 class="card-title" id="Thai">Thai</h4>
                           <p class="card-text">
                             4.5 rating | 0.3 Mi | 5 mins
                           </p>
@@ -259,7 +260,7 @@
                           src="./images/dunk.jpg"
                         />
                         <div class="card-body">
-                          <h4 class="card-title">Dunkin'</h4>
+                          <h4 class="card-title" id="Dunkin`">Dunkin'</h4>
                           <p class="card-text">
                             4.5 rating | 1.6 Mi | 15 mins
                           </p>
@@ -276,64 +277,11 @@
                           src="./images/chyus.jpg"
                         />
                         <div class="card-body">
-                          <h4 class="card-title">Chyu's</h4>
+                          <h4 class="card-title" id="Chyu`s">Chyu's</h4>
                           <p class="card-text">
                             3.8 rating | 2.6 Mi | 35 mins
                           </p>
                           <p><span style="color: rgb(42, 165, 140); font-weight: bold;">$19 Delivery Fee</span></p>
-                     
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item" id="carousel-item-3">
-                  <div class="row">
-                    <div class="col-md-4 mb-3">
-                      <div class="card">
-                        <img
-                          class="img-fluid"
-                          alt="100%x280"
-                          src="./images/bonchon.jpg" />
-                        <div class="card-body">
-                          <h4 class="card-title">Bonchon</h4>
-                          <p class="card-text">
-                            4.5 rating | 2.6 Mi | 45 mins
-                          </p>
-                          <p><span style="color: rgb(42, 165, 140); font-weight: bold;">$40 Delivery Fee</span></p>
-                     
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                      <div class="card">
-                        <img
-                          class="img-fluid"
-                          alt="100%x280"
-                          src="./images/kabob.jpeg"  />
-                        <div class="card-body">
-                          <h4 class="card-title">kabob Corner</h4>
-                          <p class="card-text">
-                            3.4 rating | 0.1 Mi | 23 mins
-                          </p>
-                          <p><span style="color: rgb(42, 165, 140); font-weight: bold;">$4 Delivery Fee</span></p>
-                     
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                      <div class="card">
-                        <img
-                          class="img-fluid"
-                          alt="100%x280"
-                          src="./images/star.jpg" />
-                        <div class="card-body">
-                          <h4 class="card-title">Starbucks</h4>
-                          <p class="card-text">
-                            4.5 rating | 0.1 Mi | 10 mins
-                          </p>
-                          <p><span style="color: rgb(42, 165, 140); font-weight: bold;">$8 Delivery Fee</span></p>
-                     
                         </div>
                       </div>
                     </div>
@@ -463,7 +411,7 @@
       </footer>
     </div>
   </div> 
-
+  <script src="script.js"></script>
   <!-- Bootstrap JS -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
