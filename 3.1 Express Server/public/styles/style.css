@@ -1,0 +1,281 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+header {
+    position: fixed;
+background-color: white;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+}
+hr {
+    width: 100%; /* Set the desired width here */
+ 
+  }
+
+.container02 {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 50px;
+    padding-bottom: 10px;
+    
+  }
+  .container img {
+    margin-left: 2px;
+  }
+
+.root.search {
+    width: 630px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: #e1e9dc;
+    border: 0;
+    padding: 1px;
+    font-size: larger;
+    padding-left: 70px;
+    position: relative; /* Ensure the search bar is positioned relatively */
+}
+.search.root {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/></svg>');
+    background-repeat: no-repeat;
+    background-position: left 20px center;
+    padding-right: 10px; 
+    transition: background-image 0.1s ease-in-out; /* Add transition for smooth icon change */
+
+  }
+  .suggestions {
+      border: 1px solid #ccc;
+      background-color: #fff;
+      border-radius: 5px;
+      position: absolute;
+      width: 630px; /* Match the width of the search bar */
+      top: 65px; /* Adjusted to position it right below the search bar, considering the search bar's height and desired gap */
+      left: 0; /* Align it to the left of the search bar */
+      display: none; /* Initially hidden, will be shown when there are suggestions */
+      z-index: 1; /* Ensure it appears above other elements */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for a better appearance */
+     margin-left: 380px;
+  }
+  
+  .suggestions div {
+      padding: 10px;
+      cursor: pointer;
+  }
+  
+  .suggestions div:hover {
+      background-color: #f1f1f1;
+  }
+
+   
+
+  .toggle-btn {
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 100px;
+    cursor: pointer;
+    font-weight: bold; 
+    font-size: medium;
+    padding : 2px;
+  }
+  
+  .toggle-btn.active {
+    
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .circular-button {
+    border: 0 solid ; /* Set border width and color */
+    border-radius: 90px; /* Make the button circular */
+    width:50px;
+    background-color: #4CAF50; /* Set background color to transparent */
+    padding: 5px;
+    cursor: pointer; /* Set cursor to pointer for better user interaction */
+  }
+
+  /* CSS for sidebar menu */
+.w3-sidebar {
+  position: fixed; 
+  top: 90px; 
+  bottom: 0; 
+  left: 70px; 
+  z-index: 3;
+  font-weight: bold;
+  height: 75%; 
+  margin-left: 0; 
+  overflow-y: auto; /* Enable vertical scrollbar */
+  width: auto; /* Set width to auto to fit content */
+  max-width: 300px;
+}
+
+.w3-sidebar a {
+  padding: 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #0e0f0e;
+  display: block;
+  border-radius: 10px;
+}
+
+.w3-sidebar a .icon {
+  margin-right: 10px;
+  transition: filter;
+}
+
+
+/* Change color of text and icon when parent anchor is hovered */
+.w3-sidebar a:hover {
+  color: #4CAF50; /* Change text color to green */
+}
+
+.w3-sidebar a:hover .icon {
+  filter: invert(54%) sepia(73%) saturate(358%) hue-rotate(73deg) brightness(93%) contrast(92%);
+}
+
+
+.w3-sidebar .w3-bar-block a:hover {
+  background-color: transparent; /* Remove background color */
+  color: #4CAF50; /* Change text color to green */
+}
+
+
+/* Main section */
+.card .img-fluid {
+  width: 95%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.btn[data-bs-slide="prev"],
+.btn[data-bs-slide="next"] {
+  border-radius: 100px;
+  justify-content: center; /* Align icon horizontally */
+  align-items: center;
+  background-color: #e1e9dc;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color:#4CAF50!important;
+}
+ .card:hover {
+  border:1px solid  #1c1e1c ;
+ }
+  
+  /* footer */
+
+  .container {
+    margin-left: 25px !important;
+     /* Adjust the margin value as needed */
+}
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-icons img {
+    width: 20px; /* Adjust icon size as needed */
+    height: 20px;
+  }
+  
+  /* responsiveness */
+  @media ((min-width: 576px) and (max-width:770px) ) {
+    #offcanvas {
+      width: 35% !important;
+    } 
+  }
+  @media (max-width: 576px) {
+    .w3-sidebar {
+      position: fixed;
+      top: 25px;
+      bottom: 0;
+      left: 0px !important; 
+      z-index: 3;
+      width: fit-content!important;
+      font-weight: bold;
+      height: 75%;
+      margin-left: 0;
+     }
+     
+  
+.container02 {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  margin-left: 90px;
+}
+.container img {
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.root.search {
+  width: 100%;
+  height: 40px;
+  border-radius: 100px;
+  background-color: #e1e9dc;
+  border: 0;
+  padding: 1px;
+  font-size: small;
+  padding-left: 70px;
+  
+}
+#deliveryBtn {
+  width: fit-content ;
+}
+
+.container {
+  padding-top: 200px!important;
+  margin-left: 33px !important;
+}
+
+/* Change color of text and icon when parent anchor is hovered */
+.w3-sidebar a:hover {
+  color: #4CAF50; /* Change text color to green */
+}
+
+.w3-sidebar a:hover .icon {
+  filter: invert(54%) sepia(73%) saturate(358%) hue-rotate(73deg) brightness(93%) contrast(92%);
+}
+#offcanvas {
+  width: 35% !important;
+} 
+
+  }
+
+  @media (max-width: 375px)
+  {
+#offcanvas {
+    width: 40% !important;
+}
+
+}
+
+@media (min-width:1181px) {
+.container {
+  justify-content: center;
+}
+.container02 {
+  flex-grow: 1;
+}
+#offcanvas {
+  width: 15% !important;
+} 
+}
